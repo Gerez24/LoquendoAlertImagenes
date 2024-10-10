@@ -1,34 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mejora de Imágenes con IA</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mejora de Imágenes</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Mejora la calidad de tus imágenes</h1>
-        
-        <!-- Input para cargar la imagen -->
-        <input type="file" id="imageUpload" accept="image/*" class="upload-btn">
-        <button id="enhanceButton" class="btn">Mejorar Imagen</button>
-        
-        <!-- Espacio para previsualizar la imagen subida -->
-        <div class="image-container">
-            <h3>Vista previa:</h3>
-            <img id="previewImage" alt="Imagen previa" />
-        </div>
-
-        <!-- Espacio para mostrar la imagen mejorada -->
-        <div class="image-container">
-            <h3>Imagen mejorada:</h3>
-            <img id="enhancedImage" alt="Imagen mejorada" />
-        </div>
+  <div class="container">
+    <h1>Mejorar Calidad de Imágenes</h1>
+    <input type="file" id="imageUpload" accept="image/*">
+    <div id="previewContainer">
+      <img id="previewImage" src="#" alt="Vista Previa">
     </div>
-
-    <!-- Enlace al archivo JavaScript -->
-    <script src="script.js"></script>
+    <button id="enhanceBtn">Mejorar Imagen</button>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <a id="downloadLink" style="display:none;" download="imagen-mejorada.png">Descargar Imagen Mejorada</a>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
